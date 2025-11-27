@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CiLocationOn } from "react-icons/ci";
-import { SITE } from '../data/siteData.js'
+import { SITE } from '../../data/SiteData'
 
 export default function Hero() {
     const [showPopup, setShowPopup] = useState(false);
@@ -68,7 +68,7 @@ export default function Hero() {
                                     <div className="flex items-center gap-4 mb-6">
                                         <div className="w-14 h-14 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
                                             {/* {SITE.name.split(' ').map(n => n[0]).join('')} */}
-                                            <img className="w-full h-full rounded-full" src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="" />
+                                            <img className="w-full h-full object-contain rounded-full" src="/assets/logo/my1.jpg" alt="" />
                                         </div>
                                         <div>
                                             <h3 className="text-white font-semibold text-lg">Metawish AI Indore</h3>

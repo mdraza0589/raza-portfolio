@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { SITE } from '../data/siteData.js'
+import { SITE } from '../../data/SiteData'
 
 // React Icons
 import { FaGithub, FaLinkedinIn, FaWhatsapp, FaFacebookF, FaInstagram } from "react-icons/fa";
