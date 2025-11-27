@@ -72,8 +72,8 @@ export const MOBILE_APPS = [
 
 export const EXPERIENCE = [
     {
-        title: 'MERN Stack Developer — Metawish AI',
-        period: 'Jan 2025 – June 2025',
+        title: 'MERN Stack Developer - Metawish AI',
+        period: 'june 2025 - Prosent',
         bullets: [
             'Built full-stack features using MERN',
             'Implemented JWT + cookie based authentication',
@@ -81,8 +81,8 @@ export const EXPERIENCE = [
         ]
     },
     {
-        title: 'Frontend Developer Intern — Unified Mentor',
-        period: '5 Feb 2025 – 5 Mar 2025',
+        title: 'Frontend Developer Intern - Unified Mentor',
+        period: '5 Feb 2025 - 5 Mar 2025',
         bullets: [
             'Built dynamic frontend components using React.js',
             'Improved UI/UX and responsive layouts using HTML, CSS & JS',
@@ -96,13 +96,13 @@ export const EDUCATION = [
     {
         title: 'Bachelor of Technology (B.Tech)',
         institute: 'IES College of Technology, Bhopal',
-        period: '2021 – 2025',
+        period: '2021 - 2025',
         note: 'Completed',
     },
     {
         title: 'Master of Computer Applications (MCA)',
         institute: 'Patel College of Technology, Bhopal',
-        period: '2025 – Present',
+        period: '2025 - Present',
         note: 'Pursuing',
     }
 ]

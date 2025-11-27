@@ -98,15 +98,13 @@ export default function ProjectsGrid() {
                                     </p>
 
                                     <div className="flex items-center justify-between">
-                                        <a
-                                            href={app.link}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
+                                        <button
+                                            onClick={() => alert("App will be Soon in Play Store")}
                                             className="inline-flex items-center gap-2 bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg font-medium transition-all duration-300 group-hover:shadow-lg group-hover:shadow-purple-500/25"
                                         >
                                             <span>View App</span>
                                             <span className="group-hover:translate-x-1 transition-transform">→</span>
-                                        </a>
+                                        </button>
 
                                         {/* Tech Stack Tags */}
                                         {app.tech && (
