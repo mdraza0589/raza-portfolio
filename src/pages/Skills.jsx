@@ -13,6 +13,7 @@ export default function Skills() {
         { name: "MongoDB", icon: <SiMongodb />, level: "95%" },
         { name: "HTML", icon: <FaHtml5 />, level: "95%" },
         { name: "CSS", icon: <FaCss3Alt />, level: "90%" },
+        { name: "DSA", icon: <FaGitAlt />, level: "80%" },
         { name: "TailwindCSS", icon: <SiTailwindcss />, level: "98%" },
         { name: "Git / GitHub", icon: <FaGitAlt />, level: "95%" },
     ];
@@ -50,6 +51,7 @@ export default function Skills() {
                                     <div className="text-4xl text-cyan-500">{skill.icon}</div>
                                     <h3 className="text-2xl font-semibold">{skill.name}</h3>
                                 </div>
+
 
                                 {/* Progress Bar */}
                                 <div className="w-full bg-gray-300 rounded-full h-2 relative">

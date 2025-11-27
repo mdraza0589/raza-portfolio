@@ -9,8 +9,13 @@ export default function Footer() {
     const currentYear = new Date().getFullYear()
 
     return (
-        <footer className="bg-gradient-to-b from-white to-gray-50 border-t border-gray-200 mt-20">
-            <div className="container mx-auto px-6">
+        <footer className="bg-gradient-to-br from-gray-900 via-black to-gray-900 border-t border-gray-800 relative overflow-hidden">
+            {/* Background Effects */}
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-purple-500/5"></div>
+            <div className="absolute -top-20 -right-20 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl"></div>
+            <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl"></div>
+
+            <div className="container mx-auto px-6 relative z-10">
 
                 {/* Main Footer */}
                 <div className="py-12">
@@ -25,11 +30,11 @@ export default function Footer() {
                         >
                             <div className="flex items-center gap-3 justify-center md:justify-start">
                                 <div>
-                                    <div className="text-xl font-bold text-gray-900">{SITE.name}</div>
-                                    <div className="text-sm text-gray-500">{SITE.role}</div>
+                                    <div className="text-xl font-bold text-white">{SITE.name}</div>
+                                    <div className="text-sm text-cyan-400">{SITE.role}</div>
                                 </div>
                             </div>
-                            <p className="text-gray-600 mt-4 max-w-md">
+                            <p className="text-gray-300 mt-4 max-w-md">
                                 Building the future with code, one project at a time.
                             </p>
                         </motion.div>
@@ -47,7 +52,7 @@ export default function Footer() {
                                 href={SITE.github}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-12 h-12 bg-gray-900 text-white rounded-xl flex items-center justify-center hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 hover:-translate-y-1"
+                                className="w-12 h-12 bg-gray-800/80 backdrop-blur-sm text-white rounded-xl flex items-center justify-center hover:bg-gray-700 hover:border-cyan-400/50 transition-all duration-300 shadow-lg hover:shadow-cyan-500/25 hover:scale-110 hover:-translate-y-1 border border-gray-700"
                             >
                                 <FaGithub size={22} />
                             </a>
@@ -57,7 +62,7 @@ export default function Footer() {
                                 href={SITE.linkedin}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 hover:-translate-y-1"
+                                className="w-12 h-12 bg-gray-800/80 backdrop-blur-sm text-white rounded-xl flex items-center justify-center hover:bg-blue-600 hover:border-blue-400/50 transition-all duration-300 shadow-lg hover:shadow-blue-500/25 hover:scale-110 hover:-translate-y-1 border border-gray-700"
                             >
                                 <FaLinkedinIn size={22} />
                             </a>
@@ -67,7 +72,7 @@ export default function Footer() {
                                 href={SITE.facebook}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-12 h-12 bg-blue-500 text-white rounded-xl flex items-center justify-center hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 hover:-translate-y-1"
+                                className="w-12 h-12 bg-gray-800/80 backdrop-blur-sm text-white rounded-xl flex items-center justify-center hover:bg-blue-500 hover:border-blue-400/50 transition-all duration-300 shadow-lg hover:shadow-blue-500/25 hover:scale-110 hover:-translate-y-1 border border-gray-700"
                             >
                                 <FaFacebookF size={22} />
                             </a>
@@ -77,7 +82,7 @@ export default function Footer() {
                                 href={SITE.instagram}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-12 h-12 bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600 text-white rounded-xl flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 hover:-translate-y-1"
+                                className="w-12 h-12 bg-gray-800/80 backdrop-blur-sm text-white rounded-xl flex items-center justify-center hover:bg-gradient-to-br hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/25 hover:scale-110 hover:-translate-y-1 border border-gray-700"
                             >
                                 <FaInstagram size={22} />
                             </a>
@@ -87,7 +92,7 @@ export default function Footer() {
                                 href={`https://wa.me/${SITE.whatsapp}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-12 h-12 bg-green-500 text-white rounded-xl flex items-center justify-center hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 hover:-translate-y-1"
+                                className="w-12 h-12 bg-gray-800/80 backdrop-blur-sm text-white rounded-xl flex items-center justify-center hover:bg-green-500 hover:border-green-400/50 transition-all duration-300 shadow-lg hover:shadow-green-500/25 hover:scale-110 hover:-translate-y-1 border border-gray-700"
                             >
                                 <FaWhatsapp size={22} />
                             </a>
@@ -101,26 +106,27 @@ export default function Footer() {
                             viewport={{ once: true }}
                             className="text-center md:text-right"
                         >
-                            <h4 className="font-semibold text-gray-900 mb-4">Get In Touch</h4>
-                            <a href={`mailto:${SITE.email}`} className="text-cyan-600 hover:text-cyan-700">
+                            <h4 className="font-semibold text-white mb-4">Get In Touch</h4>
+                            <a href={`mailto:${SITE.email}`} className="text-cyan-400 hover:text-cyan-300 transition-colors duration-300 font-medium">
                                 {SITE.email}
                             </a>
-                            <p className="text-gray-600 mt-2">{SITE.location}</p>
+                            <p className="text-gray-300 mt-2">{SITE.location}</p>
                         </motion.div>
 
                     </div>
                 </div>
 
                 {/* Footer Bottom */}
-                <div className="py-6 border-t border-gray-200">
+                <div className="py-6 border-t border-gray-800/50">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <div className="text-gray-600 text-sm">
+                        <div className="text-gray-400 text-sm">
                             © {currentYear} {SITE.name}. All rights reserved.
                         </div>
-                        <p className="text-gray-500 text-sm">Thank you for your interest. Let's build something great together.</p>
+                        <p className="text-gray-500 text-sm text-center">Thank you for your interest. Let's build something great together.</p>
                     </div>
                 </div>
             </div>
         </footer>
     )
 }
+

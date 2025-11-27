@@ -1,3 +1,4 @@
+// ContactForm.jsx
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -31,15 +32,15 @@ export default function ContactForm() {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="mb-6 bg-gradient-to-r from-green-500 to-emerald-600 text-white p-4 rounded-2xl shadow-lg"
+                        className="mb-6 bg-green-500 text-white p-4 rounded-xl border border-green-400"
                     >
                         <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                            <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-sm">
                                 ✓
                             </div>
                             <div>
-                                <h4 className="font-semibold">Message Sent Successfully!</h4>
-                                <p className="text-green-100 text-sm">Thank you for reaching out. I'll get back to you soon.</p>
+                                <p className="font-medium">Message sent successfully!</p>
+                                <p className="text-green-100 text-sm">I'll get back to you soon.</p>
                             </div>
                         </div>
                     </motion.div>
@@ -47,27 +48,22 @@ export default function ContactForm() {
             </AnimatePresence>
 
             <motion.form
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 onSubmit={handleSubmit}
-                className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden"
+                className="bg-gray-800 rounded-2xl border border-gray-700 p-8"
             >
                 {/* Form Header */}
-                <div className="bg-gradient-to-r from-cyan-500 to-blue-600 p-6 text-white">
-                    <h3 className="text-2xl font-bold">Get In Touch</h3>
-                    <p className="text-cyan-100 mt-2">Let's discuss your next project</p>
+                <div className="text-center mb-8">
+                    <h3 className="text-2xl font-bold text-white mb-2">Get In Touch</h3>
+                    <p className="text-gray-400">Let's discuss your next project</p>
                 </div>
 
-                <div className="p-6 space-y-6">
+                <div className="space-y-6">
                     {/* Name Field */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.1 }}
-                    >
-                        <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    <div>
+                        <label className="block text-sm font-medium text-gray-300 mb-2">
                             Full Name *
                         </label>
                         <input
@@ -75,19 +71,14 @@ export default function ContactForm() {
                             value={form.name}
                             onChange={handleChange}
                             required
-                            className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                            className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
                             placeholder="Enter your full name"
                         />
-                    </motion.div>
+                    </div>
 
                     {/* Email Field */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.2 }}
-                    >
-                        <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    <div>
+                        <label className="block text-sm font-medium text-gray-300 mb-2">
                             Email Address *
                         </label>
                         <input
@@ -96,19 +87,14 @@ export default function ContactForm() {
                             value={form.email}
                             onChange={handleChange}
                             required
-                            className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                            className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
                             placeholder="Enter your email address"
                         />
-                    </motion.div>
+                    </div>
 
                     {/* Message Field */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.3 }}
-                    >
-                        <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    <div>
+                        <label className="block text-sm font-medium text-gray-300 mb-2">
                             Your Message *
                         </label>
                         <textarea
@@ -116,44 +102,32 @@ export default function ContactForm() {
                             value={form.message}
                             onChange={handleChange}
                             required
-                            rows={6}
-                            className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white resize-none"
+                            rows={5}
+                            className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors resize-none"
                             placeholder="Tell me about your project or just say hello..."
                         />
-                    </motion.div>
+                    </div>
 
                     {/* Submit Button */}
-                    <motion.button
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.4 }}
+                    <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 disabled:from-gray-400 disabled:to-gray-500 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl disabled:shadow-none flex items-center justify-center gap-2"
+                        className="w-full bg-cyan-500 hover:bg-cyan-600 disabled:bg-gray-600 text-white font-medium py-3 px-6 rounded-xl transition-colors duration-300 flex items-center justify-center gap-2"
                     >
                         {isSubmitting ? (
                             <>
-                                <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                                <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
                                 <span>Sending...</span>
                             </>
                         ) : (
                             <>
                                 <span>Send Message</span>
-                                <span className="text-lg">🚀</span>
                             </>
                         )}
-                    </motion.button>
+                    </button>
                 </div>
 
-                {/* Form Footer */}
-                <div className="bg-gray-50 px-6 py-4 border-t border-gray-200">
-                    <p className="text-center text-sm text-gray-600">
-                        💡 I typically respond within 24 hours
-                    </p>
-                </div>
             </motion.form>
         </div>
     )
 }
-

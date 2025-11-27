@@ -9,9 +9,9 @@ const Nav = () => {
     const navLinks = [
         { to: "/", label: "Home", icon: "" },
         { to: "/projects", label: "Projects", icon: "" },
-        { to: "/experience", label: "Experience", icon: "" },
+        { to: "/skills", label: "Skills", icon: "" },
+        { to: "/about", label: "About", icon: "" },
         { to: "/contact", label: "Contact", icon: "" },
-        { to: "/skills", label: "Skills", icon: "" }
     ]
 
     return (

@@ -24,13 +24,10 @@ export default function ProjectsGrid() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <div className="text-center mb-4">
+                    <div className="mb-4">
                         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2">
-                            Live Web Projects
+                            Projects
                         </h2>
-                        <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-                            A collection of modern web applications built with cutting-edge technologies
-                        </p>
                     </div>
 
                     <motion.div
@@ -54,16 +51,10 @@ export default function ProjectsGrid() {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="mt-20"
                 >
-                    <div className="text-center mb-4">
-                        <span className="text-purple-500 font-semibold text-sm uppercase tracking-wider">
-                            Mobile Development
-                        </span>
+                    <div className="mb-4">
                         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2">
                             Mobile Applications
                         </h2>
-                        <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-                            Cross-platform mobile apps delivering seamless user experiences
-                        </p>
                     </div>
 
                     <motion.div
