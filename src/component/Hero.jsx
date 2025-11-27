@@ -13,7 +13,7 @@ export default function Hero() {
             {/* Animated background elements */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-500/10 to-transparent animate-pulse"></div>
 
-            <div className="container mx-auto px-6 py-20 relative z-10">
+            <div className="container mx-auto px-3 py-20 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
 
                     {/* LEFT SECTION - Enhanced */}

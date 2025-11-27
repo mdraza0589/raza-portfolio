@@ -5,20 +5,20 @@ import { SiMongodb, SiTailwindcss, SiJavascript, SiExpress } from "react-icons/s
 
 export default function Skills() {
     const skills = [
-        { name: "React.js", icon: <FaReact />, level: "90%" },
+        { name: "React.js", icon: <FaReact />, level: "98%" },
         { name: "React Native", icon: <FaReact />, level: "95%" },
-        { name: "JavaScript", icon: <SiJavascript />, level: "85%" },
-        { name: "Node.js", icon: <FaNodeJs />, level: "80%" },
-        { name: "Express.js", icon: <SiExpress />, level: "80%" },
-        { name: "MongoDB", icon: <SiMongodb />, level: "80%" },
+        { name: "JavaScript", icon: <SiJavascript />, level: "96%" },
+        { name: "Node.js", icon: <FaNodeJs />, level: "95%" },
+        { name: "Express.js", icon: <SiExpress />, level: "98%" },
+        { name: "MongoDB", icon: <SiMongodb />, level: "95%" },
         { name: "HTML", icon: <FaHtml5 />, level: "95%" },
         { name: "CSS", icon: <FaCss3Alt />, level: "90%" },
-        { name: "TailwindCSS", icon: <SiTailwindcss />, level: "85%" },
-        { name: "Git / GitHub", icon: <FaGitAlt />, level: "75%" },
+        { name: "TailwindCSS", icon: <SiTailwindcss />, level: "98%" },
+        { name: "Git / GitHub", icon: <FaGitAlt />, level: "95%" },
     ];
 
     return (
-        <section className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white py-20 px-6">
+        <section className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white py-10 px-6">
             <div className="container mx-auto">
 
                 {/* Heading */}
@@ -32,7 +32,7 @@ export default function Skills() {
                 </motion.h2>
 
                 {/* White Main Card Container */}
-                <div className="bg-white text-gray-900 rounded-3xl shadow-2xl p-10 max-w-6xl mx-auto border border-gray-200">
+                <div className=" text-gray-900 rounded-3xl shadow-2xl p-10 max-w-6xl mx-auto">
 
                     {/* Skills Grid */}
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
