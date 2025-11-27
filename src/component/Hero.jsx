@@ -5,7 +5,9 @@ import { SITE } from '../../data/SiteData'
 
 export default function Hero() {
     const [showPopup, setShowPopup] = useState(false);
-
+    const defaultMessage = encodeURIComponent(
+        "Hello,\nRaza, I visited your portfolio and I want to connect with you."
+    );
     return (
         <section className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
             {/* Animated background elements */}
@@ -38,17 +40,17 @@ export default function Hero() {
                                 onClick={() => setShowPopup(true)}
                                 className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg shadow-cyan-500/25 transition-all duration-300"
                             >
-                                📄 Download Resume
+                                Download Resume
                             </motion.button>
 
-                            <motion.a
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                href="/contact"
-                                className="border-2 border-white/20 hover:border-white/40 text-white px-8 py-4 rounded-xl font-semibold backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
+                            <a
+                                href={`https://wa.me/${SITE.whatsapp}?text=${defaultMessage}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="border-2 hover:scale-105 border-white/20 hover:border-white/40 text-white px-8 py-4 rounded-xl font-semibold backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
                             >
-                                💬 Get In Touch
-                            </motion.a>
+                                Get In Touch
+                            </a>
                         </div>
                     </motion.div>
 
@@ -154,7 +156,7 @@ export default function Hero() {
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
                                         href="/resume.pdf"
-                                        download={`${SITE.name}_Resume.pdf`}
+                                        download={`raza_Resume.pdf`}
                                         className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-3 rounded-xl font-semibold flex items-center gap-2"
                                     >
                                         <span>Download</span>
