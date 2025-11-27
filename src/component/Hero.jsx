@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CiLocationOn } from "react-icons/ci";
-import { SITE } from "../data/siteData";
+import { SITE } from '../data/siteData.js'
+
 export default function Hero() {
     const [showPopup, setShowPopup] = useState(false);
 

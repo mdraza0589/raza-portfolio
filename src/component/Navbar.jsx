@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { SITE } from '../data/siteData'
+import { SITE } from '../data/siteData.js'
 
 const Nav = () => {
     const [open, setOpen] = useState(false)

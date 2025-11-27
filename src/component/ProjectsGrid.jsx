@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
 import { motion } from 'framer-motion'
-import { MOBILE_APPS, PROJECTS } from '../data/SiteData'
+import { MOBILE_APPS, PROJECTS } from '../data/projectsData.js'
 
 export default function ProjectsGrid() {
     const containerVariants = {

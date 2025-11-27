@@ -1,7 +1,7 @@
 import React from 'react'
-import { EXPERIENCE, EDUCATION } from '../data/SiteData'
 import ExperienceCard from '../component/ExperienceCard'
 import EducationCard from '../component/EducationCard'
+import { EDUCATION, EXPERIENCE } from '../data/siteData'
 
 
 export default function Experience() {
