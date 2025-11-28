@@ -13,7 +13,7 @@ export default function ExperienceCard({ exp, index }) {
             className="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-gray-700 p-8 transition-all duration-300 hover:border-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-500/10"
         >
             {/* Header */}
-            <div className="flex items-start justify-between mb-6">
+            <div className="md:flex items-start justify-between mb-6 ">
                 <div className="flex items-start flex-1">
                     {/* Title & Company */}
                     <div className="flex-1">

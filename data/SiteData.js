@@ -73,7 +73,7 @@ export const MOBILE_APPS = [
 export const EXPERIENCE = [
     {
         title: 'MERN Stack Developer - Metawish AI',
-        period: 'june 2025 - Prosent',
+        period: 'June 2025 - Present',
         bullets: [
             'Built full-stack features using MERN',
             'Implemented JWT + cookie based authentication',
