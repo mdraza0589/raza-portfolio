@@ -55,7 +55,7 @@ const Hero = () => {
                         {/* Action Buttons */}
                         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 lg:mb-8 justify-center lg:justify-start">
                             <button
-                                onClick={() => window.open('/resume.pdf', '_blank')}
+                                onClick={() => window.open('/assets/documents/resume.pdf', '_blank')}
                                 className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25 border border-cyan-400/30 uppercase tracking-wider text-sm sm:text-base"
                             >
                                 View Resume

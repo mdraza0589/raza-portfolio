@@ -1,9 +1,27 @@
 export const SITE = {
-    name: 'Mohammad Raza',
-    role: 'MERN Stack Developer',
-    location: 'Indore, India',
-    phone: '+91-6268053340',
-    email: 'razamohammad0589@example.com',
+    name: "Mohammad Raza",
+    role: "MERN Stack Developer",
+
+    // Address
+    currentAddress: {
+        city: "Indore",
+        state: "Madhya Pradesh",
+        country: "India",
+        pincode: "452010"
+    },
+
+    permanentAddress: {
+        street: "Sarbhoka, Post - Nagpur",
+        city: "District - MCB",
+        state: "Chhattisgarh",
+        country: "India",
+        pincode: "497442"
+    },
+
+    phone: "+91-6268053340",
+    email: "razamohammad0589@example.com",
+    whatsapp: "+916268053340",
+
 
     github: 'https://github.com/mdraza0589',
     linkedin: 'https://www.linkedin.com/in/mohammad-raza-493623237/',
@@ -12,7 +30,8 @@ export const SITE = {
     facebook: 'https://www.facebook.com/Mdraza0589',
     instagram: 'https://www.instagram.com/i_am_raza_41/',
     whatsapp: '916268053340',
-}
+};
+
 
 
 

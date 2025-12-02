@@ -11,6 +11,7 @@ const Nav = () => {
         { to: "/projects", label: "Projects" },
         { to: "/skills", label: "Skills" },
         { to: "/about", label: "About" },
+        { to: "/certificate", label: "Certificate" },
         { to: "/contact", label: "Contact" },
     ]
 
@@ -22,6 +23,7 @@ const Nav = () => {
                 animate={{ y: 0, opacity: 1 }}
                 className="bg-white/95 backdrop-blur-lg border-b border-gray-300 sticky top-0 z-40 shadow-sm"
             >
+
                 <div className="container mx-auto px-6">
                     <div className="flex items-center justify-between py-4">
                         <NavLink to='/'>
@@ -40,8 +42,8 @@ const Nav = () => {
                                     </span>
                                 </div>
                                 <div>
-                                    <div className="text-xl font-bold text-gray-900 tracking-tight">
-                                        {SITE.name}
+                                    <div className="text-3xl font-extrabold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent tracking-tight">
+                                        PortFolio
                                     </div>
                                     <div className="text-sm text-gray-600 font-medium">{SITE.role}</div>
                                 </div>
