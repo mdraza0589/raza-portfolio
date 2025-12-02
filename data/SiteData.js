@@ -64,9 +64,9 @@ export const PROJECTS = [
 
 
 export const MOBILE_APPS = [
+    { title: 'YouLite App', link: 'https://play.google.com/store/apps/details?id=com.youlite.store' },
     { title: 'Basilstar App', link: '#' },
     { title: 'Vedaro App', link: '#' },
-    { title: 'YouLite App', link: '#' },
 ]
 
 

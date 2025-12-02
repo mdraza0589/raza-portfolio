@@ -14,6 +14,15 @@ export default function ProjectsGrid() {
         }
     }
 
+    const handleAppClick = (link) => {
+        if (link === '#') {
+            alert('App Will be soon in google play store.')
+            return;
+        }
+        window.open(link, '_blank')
+    }
+
+
     return (
         <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
             <div className="container mx-auto px-6">
@@ -90,7 +99,7 @@ export default function ProjectsGrid() {
 
                                     <div className="flex items-center justify-between">
                                         <button
-                                            onClick={() => alert("App will be Soon in Play Store")}
+                                            onClick={() => handleAppClick(app.link)}
                                             className="inline-flex items-center gap-2 bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg font-medium transition-all duration-300 group-hover:shadow-lg group-hover:shadow-purple-500/25"
                                         >
                                             <span>View App</span>
