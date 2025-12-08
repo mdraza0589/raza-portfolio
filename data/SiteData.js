@@ -126,3 +126,62 @@ export const EDUCATION = [
     }
 ]
 
+
+
+export const CERTIFICATES = [
+    {
+        id: 1,
+        title: 'Frontend',
+        issuer: 'GATEWAY IT INFOTECK Bhopal',
+        image: '/assets/gateway.png',
+        skills: ['React', 'Redux', 'Hooks', 'Context API'],
+        link: '#',
+        pdfFile: '/assets/documents/Frontend Raza Gateway.pdf'
+    },
+    {
+        id: 2,
+        title: 'Internship',
+        issuer: 'UNIFIED MENTOR',
+        image: '/assets/unified.png',
+        skills: ['HTML', 'CSS', 'JAVASCRIPT'],
+        link: '#',
+        pdfFile: '/assets/documents/Unified Mentor .pdf'
+    },
+    {
+        id: 3,
+        title: 'Excel',
+        issuer: 'MS OFFICE',
+        image: '/assets/msoffice.png',
+        skills: ['MS WORD', "POWERPOINT", "MS EXCEL"],
+        link: '#',
+        pdfFile: '/assets/documents/MS OFFICE.pdf'
+    },
+    {
+        id: 4,
+        title: 'DSA',
+        issuer: 'Sharma Computer Academy Bhopal',
+        image: '/assets/dataStructure.png',
+        skills: ['DSA IN C'],
+        link: '#',
+        pdfFile: '/assets/documents/DSA.pdf'
+    },
+    {
+        id: 5,
+        title: 'C and C++',
+        issuer: 'Sharma Computer Academy Bhopal',
+        image: '/assets/c and cpp.png',
+        skills: ['C', 'C++'],
+        link: '#',
+        pdfFile: '/assets/documents/C and C++.pdf'
+    },
+    {
+        id: 6,
+        title: 'Excel',
+        issuer: 'Business Analytics with Excel',
+        image: '/assets/Business Anlytics.png',
+        skills: ['Excel'],
+        link: '#',
+        pdfFile: '/assets/documents/Excel.pdf'
+    },
+];
+

@@ -1,44 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { CERTIFICATES } from '../../data/SiteData';
 
-const CERTIFICATES = [
-    {
-        id: 1,
-        title: 'Frontend',
-        issuer: 'GATEWAY IT INFOTECK Bhopal',
-        image: '/assets/gateway.png',
-        skills: ['React', 'Redux', 'Hooks', 'Context API'],
-        link: '#',
-        pdfFile: '/assets/documents/Frontend Raza Gateway.pdf'
-    },
-    {
-        id: 2,
-        title: 'Internship',
-        issuer: 'UNIFIED MENTOR',
-        image: '/assets/unified.png',
-        skills: ['HTML', 'CSS', 'JAVASCRIPT'],
-        link: '#',
-        pdfFile: '/assets/documents/Unified Mentor .pdf'
-    },
-    {
-        id: 3,
-        title: 'Excel',
-        issuer: 'MS OFFICE',
-        image: '/assets/msoffice.png',
-        skills: ['HTML', 'CSS', 'JAVASCRIPT'],
-        link: '#',
-        pdfFile: '/assets/documents/MS OFFICE.pdf'
-    },
-    {
-        id: 4,
-        title: 'SCOUTE AND GUIDE',
-        issuer: 'BHARAT SCOUT AND GUIDE',
-        image: '/assets/msoffice.png',
-        skills: ['HTML', 'CSS', 'JAVASCRIPT'],
-        link: '#',
-        pdfFile: 'assets/documents/SCOUT AND GUIDE.pdf'
-    },
-];
+
 
 const Certificate = () => {
     const [selectedCertificate, setSelectedCertificate] = useState(null);
@@ -180,4 +144,5 @@ const Certificate = () => {
 };
 
 export default Certificate;
+
 
