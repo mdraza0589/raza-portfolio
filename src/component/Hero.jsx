@@ -94,7 +94,7 @@ const Hero = () => {
                                             </svg>
                                         </div> */}
                                         {/* <span className="text-cyan-300 font-medium text-sm sm:text-base">Your Profile Image</span> */}
-                                        <img className="w-full h-full object-contain" src="/assets/logo/logo.jpg" alt="" />
+                                        <img className="w-full h-full object-contain" src="/assets/logo/raza11.png" alt="" />
                                     </div>
                                 </div>
                             </div>
