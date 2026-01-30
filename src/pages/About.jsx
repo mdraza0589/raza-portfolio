@@ -4,6 +4,7 @@ import ExperienceCard from "../component/ExperienceCard";
 import EducationCard from "../component/EducationCard";
 import { EDUCATION, EXPERIENCE, SITE } from "../../data/SiteData";
 import { motion } from "framer-motion";
+import { IoLogoGithub } from "react-icons/io5";
 import { IoLocation } from "react-icons/io5";
 export default function About() {
     return (

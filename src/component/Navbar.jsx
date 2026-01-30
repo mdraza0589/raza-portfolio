@@ -12,9 +12,8 @@ const Nav = () => {
         { to: "/skills", label: "Skills" },
         { to: "/about", label: "About" },
         { to: "/certificate", label: "Certificate" },
-        { to: "/contact", label: "Contact" },
     ]
-
+    
     return (
         <>
             {/* TOP NAVBAR */}

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt } from "react-icons/fa";
 import { SiMongodb, SiTailwindcss, SiJavascript, SiExpress } from "react-icons/si";
 
+
 export default function Skills() {
     const skills = [
         { name: "React.js", icon: <FaReact />, level: "98%" },

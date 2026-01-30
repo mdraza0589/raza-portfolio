@@ -19,7 +19,7 @@ export const SITE = {
     },
 
     phone: "+91-6268053340",
-    email: "razamohammad0589@example.com",
+    email: "razamohammad0589@gmail.com",
     whatsapp: "+916268053340",
 
 
@@ -91,24 +91,40 @@ export const MOBILE_APPS = [
 
 export const EXPERIENCE = [
     {
-        title: 'MERN Stack Developer - Metawish AI',
-        period: 'June 2025 - Present',
+        title: "Web Developer - Athena LMS (USA)",
+        period: "November 2025 - Present",
+        location: "Delhi, (India Office)",
         bullets: [
-            'Built full-stack features using MERN',
-            'Implemented JWT + cookie based authentication',
-            'Created REST APIs and optimized DB queries',
+            "Working as a Web Developer for a USA-based company",
+            "Developing and maintaining production-ready React applications",
+            "Collaborating with international teams on live projects",
+            "Optimizing frontend performance and UI/UX",
+            "Integrating REST APIs and backend services"
         ]
     },
     {
-        title: 'Frontend Developer Intern - Unified Mentor',
-        period: '5 Feb 2025 - 5 Mar 2025',
+        title: "MERN Stack Developer - Metawish AI",
+        period: "June 2025 - October 2025",
+        location: "Indore, India",
+
         bullets: [
-            'Built dynamic frontend components using React.js',
-            'Improved UI/UX and responsive layouts using HTML, CSS & JS',
-            'Integrated REST APIs and optimized loading performance'
+            "Built full-stack features using MERN",
+            "Implemented JWT + cookie based authentication",
+            "Created REST APIs and optimized DB queries"
+        ]
+    },
+    {
+        title: "Frontend Developer Intern - Unified Mentor",
+        period: "5 Feb 2025 - 5 Mar 2025",
+        location: "Bhopal, India",
+
+        bullets: [
+            "Built dynamic frontend components using React.js",
+            "Improved UI/UX and responsive layouts using HTML, CSS & JS",
+            "Integrated REST APIs and optimized loading performance"
         ]
     }
-]
+];
 
 
 export const EDUCATION = [
