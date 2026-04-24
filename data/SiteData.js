@@ -32,13 +32,9 @@ export const SITE = {
     whatsapp: '916268053340',
 };
 
-
-
-
 export const SKILLS = [
     'React', 'Redux', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'JWT', 'Cookies', 'Tailwind CSS'
 ]
-
 
 export const PROJECTS = [
     {
